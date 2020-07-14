@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>VueJS</title>
+	<link rel="stylesheet" href="">
+	<script src="vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<button v-on:click="increase(2)">Click here</button>
+		<input type="text" v-on:input="changeGreeting"></input>
+		<p>{{ greeting }}</p>
+		<p>{{ title }}</p>
+		<p>{{sayHello()}} - <a v-bind:href="link">Google</a></p>
+		<h1>Counter Value  : {{counter}}</h1>
+		<p v-on:mousemove="updateCoordinates">Coordinates : {{x}} / {{y}}
+			-<span v-on:mousemove.stop="">Dead Code</span>
+		</p>
+		<input type="text" v-on:keyup="alertMe">	</div>
+	<script src="practice1.js"></script>
+
+	</script>
+</body>
+</html>
